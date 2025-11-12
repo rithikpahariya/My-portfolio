@@ -17,9 +17,23 @@ export async function POST(req: Request) {
   try {
     const body = await req.json();
     const { name, message, social, email } = body;
-
-    const res = await fetch(
+    console.log(
       `${formLink}/formResponse?${fieldIdName}=${name}&${fieldIdEmail}=${email}&${fieldIdMessage}=${message}&${fieldIdSocial}=${social}`
+    );
+
+    const res = fetch(
+      "https://docs.google.com/forms/d/e/1FAIpQLSfkVfv_JzJPuJkUeNQs74ToXDZT1Y5dbOOfUKeTuhX4MdmfTA/formResponse",
+      {
+        method: "POST",
+        mode: "no-cors",
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: new URLSearchParams({
+          "entry.2005620554": "John Doe", // Name
+          "entry.1045781291": "john@example.com", // Email
+          "entry.839337160": "Hello there!", // Message
+          "entry.1729504360": "https://linkedin.com/in/johndoe", // Social
+        }),
+      }
     );
 
     return NextResponse.json("Success!");
