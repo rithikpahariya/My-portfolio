@@ -22,9 +22,9 @@ export const SocialLinks: SocialInterface[] = [
   },
   // {
   //   name: "Twitter",
-  //   username: "@namanbarkiya",
+  //   username: "@rithikpahariya",
   //   icon: Icons.twitter,
-  //   link: "https://twitter.com/namanbarkiya",
+  //   link: "https://twitter.com/rithikpahariya",
   // },
   {
     name: "Gmail",

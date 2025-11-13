@@ -18,7 +18,7 @@ interface ProjectPageProps {
   };
 }
 
-const githubUsername = "namanbarkiya";
+const githubUsername = "rithikpahariya";
 
 export default function Project({ params }: ProjectPageProps) {
   let project = Projects.find((val) => val.id === params.projectId);

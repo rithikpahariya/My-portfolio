@@ -1,13 +1,13 @@
 export const siteConfig = {
   name: "Rithik Pahariya | Developer Portfolio",
   authorName: "Rithik Pahariya",
-  username: "namanbarkiya",
+  username: "rithikpahariya",
   description:
     "Rithik Pahariya's portfolio - A modern, responsive Next.js portfolio for developers. This open-source template can be customized to showcase your own skills, projects, and professional experience.",
   url: "https://nbarkiya.xyz",
   links: {
-    twitter: "https://x.com/namanbarkiya",
-    github: "https://github.com/namanbarkiya",
+    twitter: "https://x.com/rithikpahariya",
+    github: "https://github.com/rithikpahariya",
   },
   ogImage: "https://nbarkiya.xyz/profile-img.jpg",
   iconIco:
