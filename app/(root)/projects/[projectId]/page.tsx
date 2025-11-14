@@ -72,7 +72,7 @@ export default function Project({ params }: ProjectPageProps) {
           >
             <Image
               src={profileImg}
-              alt={"naman"}
+              alt={"rithik"}
               width={42}
               height={42}
               className="rounded-full bg-background"
