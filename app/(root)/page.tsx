@@ -81,7 +81,7 @@ export default function IndexPage() {
             width={100}
             sizes="100vw"
             className="bg-primary rounded-full mb-0 h-auto md:mb-2 w-[60%] max-w-[16rem] border-8 border-primary"
-            alt="Naman Barkiya - Full Stack Developer Portfolio"
+            alt="Rithik Pahariya - Full Stack Developer Portfolio"
             priority
           />
           <AnimatedText
@@ -89,7 +89,7 @@ export default function IndexPage() {
             delay={0.2}
             className="font-heading text-3xl sm:text-5xl md:text-6xl lg:text-7xl"
           >
-            Naman Barkiya
+            Rithik Pahariya
           </AnimatedText>
           <AnimatedText
             as="h3"
@@ -108,10 +108,10 @@ export default function IndexPage() {
           <div className="flex flex-col mt-10 items-center justify-center sm:flex-row sm:space-x-4 gap-3">
             <AnimatedText delay={0.6}>
               <Link
-                href={"https://github.com/namanbarkiya"}
+                href={"https://github.com/rithikpahariya"}
                 target="_blank"
                 className={cn(buttonVariants({ size: "lg" }))}
-                aria-label="View Naman Barkiya's GitHub profile"
+                aria-label="View Rithik Pahariya's GitHub profile"
               >
                 <Icons.gitHub className="w-4 h-4 mr-2" /> GitHub
               </Link>
@@ -126,7 +126,7 @@ export default function IndexPage() {
                     size: "lg",
                   })
                 )}
-                aria-label="Contact Naman Barkiya"
+                aria-label="Contact Rithik Pahariya"
               >
                 <Icons.contact className="w-4 h-4 mr-2" /> Contact
               </Link>
@@ -159,6 +159,45 @@ export default function IndexPage() {
         <SkillsCard skills={featuredSkills} />
         <AnimatedText delay={0.4} className="flex justify-center">
           <Link href="/skills">
+            <Button variant={"outline"} className="rounded-xl">
+              <Icons.chevronDown className="mr-2 h-4 w-4" /> View All
+            </Button>
+          </Link>
+        </AnimatedText>
+      </AnimatedSection>
+      <AnimatedSection
+        direction="left"
+        className="container space-y-6 py-10 my-14"
+        id="experience"
+      >
+        <div className="mx-auto flex max-w-[58rem] flex-col items-center space-y-4 text-center">
+          <AnimatedText
+            as="h2"
+            className="font-heading text-3xl leading-[1.1] sm:text-3xl md:text-6xl"
+          >
+            {pagesConfig.experience.title}
+          </AnimatedText>
+          <AnimatedText
+            as="p"
+            delay={0.2}
+            className="max-w-[85%] leading-normal text-muted-foreground sm:text-lg sm:leading-7"
+          >
+            {pagesConfig.experience.description}
+          </AnimatedText>
+        </div>
+        <div className="mx-auto grid justify-center gap-4 md:w-full lg:grid-cols-3">
+          {experiences.slice(0, 3).map((experience, index) => (
+            <AnimatedSection
+              key={experience.id}
+              delay={0.1 * (index + 1)}
+              direction="up"
+            >
+              <ExperienceCard experience={experience} />
+            </AnimatedSection>
+          ))}
+        </div>
+        <AnimatedText delay={0.4} className="flex justify-center">
+          <Link href="/experience">
             <Button variant={"outline"} className="rounded-xl">
               <Icons.chevronDown className="mr-2 h-4 w-4" /> View All
             </Button>
@@ -234,45 +273,6 @@ export default function IndexPage() {
         </div>
         <AnimatedText delay={0.4} className="flex justify-center">
           <Link href="/contributions">
-            <Button variant={"outline"} className="rounded-xl">
-              <Icons.chevronDown className="mr-2 h-4 w-4" /> View All
-            </Button>
-          </Link>
-        </AnimatedText>
-      </AnimatedSection>
-      <AnimatedSection
-        direction="left"
-        className="container space-y-6 py-10 my-14"
-        id="experience"
-      >
-        <div className="mx-auto flex max-w-[58rem] flex-col items-center space-y-4 text-center">
-          <AnimatedText
-            as="h2"
-            className="font-heading text-3xl leading-[1.1] sm:text-3xl md:text-6xl"
-          >
-            {pagesConfig.experience.title}
-          </AnimatedText>
-          <AnimatedText
-            as="p"
-            delay={0.2}
-            className="max-w-[85%] leading-normal text-muted-foreground sm:text-lg sm:leading-7"
-          >
-            {pagesConfig.experience.description}
-          </AnimatedText>
-        </div>
-        <div className="mx-auto grid justify-center gap-4 md:w-full lg:grid-cols-3">
-          {experiences.slice(0, 3).map((experience, index) => (
-            <AnimatedSection
-              key={experience.id}
-              delay={0.1 * (index + 1)}
-              direction="up"
-            >
-              <ExperienceCard experience={experience} />
-            </AnimatedSection>
-          ))}
-        </div>
-        <AnimatedText delay={0.4} className="flex justify-center">
-          <Link href="/experience">
             <Button variant={"outline"} className="rounded-xl">
               <Icons.chevronDown className="mr-2 h-4 w-4" /> View All
             </Button>

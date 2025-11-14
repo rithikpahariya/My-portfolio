@@ -40,21 +40,21 @@ export const skillsUnsorted: skillsInterface[] = [
     name: "express.js",
     description:
       "Build web applications and APIs quickly using a fast, unopinionated Node.js framework.",
-    rating: 5,
+    rating: 4,
     icon: Icons.express,
   },
   {
     name: "Node.js",
     description:
       "Run JavaScript on the server side, enabling dynamic and responsive applications.",
-    rating: 5,
+    rating: 4,
     icon: Icons.nodejs,
   },
   {
     name: "MongoDB",
     description:
       "Store and retrieve data seamlessly with a flexible and scalable NoSQL database.",
-    rating: 5,
+    rating: 4,
     icon: Icons.mongodb,
   },
   {
