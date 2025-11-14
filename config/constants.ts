@@ -60,7 +60,10 @@ export type ValidSkills =
   | "FastAPI"
   | "SQL"
   | "NoSQL"
-  | "Framer Motion";
+  | "Framer Motion"
+  | "Typescript"
+  | "Chart.js"
+  | "JavaScript";
 
 export type ValidCategory =
   | "Full Stack"
