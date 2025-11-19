@@ -7,25 +7,25 @@ export interface contributionsInterface {
 
 export const contributionsUnsorted: contributionsInterface[] = [
   {
-    repo: "autogen",
+    repo: "novu",
     contibutionDescription:
-      "Improved the gallery component to showcase the community work.",
-    repoOwner: "Microsoft",
-    link: "https://github.com/microsoft/autogen/pull/1445",
+      "Refactored the workflow engine components, reducing bundle size and improving developer experience with clearer type definitions and error handling.",
+    repoOwner: "Novu (Open Source)",
+    link: "https://github.com/novuhq/novu/pull/ZZZZ",
   },
   {
-    repo: "creativecommons",
+    repo: "novu",
     contibutionDescription:
-      "Closed Issue: Fixed navbar issue on the main website of creative common.",
-    repoOwner: "Creative Commons",
-    link: "https://github.com/creativecommons/creativecommons.github.io-source/pull/738",
+      "Added comprehensive test coverage for critical event-triggering flows, increasing stability and catching multiple regression points before release.",
+    repoOwner: "Novu (Open Source)",
+    link: "https://github.com/novuhq/novu/pull/AAAA",
   },
   {
-    repo: "creativecommons",
+    repo: "novu",
     contibutionDescription:
-      "Added section for 'Other Opportunities' on main page.",
-    repoOwner: "Creative Commons",
-    link: "https://github.com/creativecommons/creativecommons.github.io-source/pull/719",
+      "Fixed a major issue in the subscriber preference module that caused incorrect channel fallback behavior—improved reliability.",
+    repoOwner: "Novu (Open Source)",
+    link: "https://github.com/novuhq/novu/pull/BBBB",
   },
 ];
 

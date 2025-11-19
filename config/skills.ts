@@ -114,11 +114,11 @@ export const skillsUnsorted: skillsInterface[] = [
     icon: Icons.socketio,
   },
   {
-    name: "Material UI",
+    name: "shadcn UI",
     description:
       "Create stunning and responsive UIs with a popular React UI framework.",
     rating: 4,
-    icon: Icons.mui,
+    icon: Icons.shadcn,
   },
 
   {
@@ -143,18 +143,18 @@ export const skillsUnsorted: skillsInterface[] = [
     icon: Icons.bootstrap,
   },
   {
-    name: "MySQL",
+    name: "PostgreSQL",
     description:
       "Manage and organize relational databases efficiently for data-driven applications.",
     rating: 2,
-    icon: Icons.mysql,
+    icon: Icons.postgresql,
   },
   {
-    name: "Netlify",
+    name: "Vercel",
     description:
-      "Manage and organize relational databases efficiently for data-driven applications.",
+      "Vercel provides the developer tools and cloud infrastructure to build, scale, and secure a faster, more personalized web.",
     rating: 4,
-    icon: Icons.netlify,
+    icon: Icons.vercel,
   },
 ];
 
